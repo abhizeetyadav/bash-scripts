@@ -20,8 +20,13 @@ This Bash script automates essential system maintenance tasks, including:
    ```bash
    git clone https://github.com/yourusername/system-maintenance.git
    cd system-maintenance
+
 2. **Give execution permission:**
 
-```
-chmod +x system_maintenance.sh
+   ```bash
+   chmod +x system_maintenance.sh
+
+3. **Run the script with:**
+    ```bash
+    ./system_maintenance.sh
 
