@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Colors for output
+
 GREEN="\e[32m"
 RED="\e[31m"
 YELLOW="\e[33m"
@@ -8,7 +8,7 @@ NC="\e[0m"
 
 echo -e "${GREEN}Starting system maintenance script...${NC}"
 
-# Function to install necessary software
+
 install_software() {
     echo -e "${YELLOW}Installing essential software...${NC}"
     sudo apt update -y
@@ -16,14 +16,14 @@ install_software() {
     echo -e "${GREEN}Software installation complete!${NC}"
 }
 
-# Function to update the system
+
 update_system() {
     echo -e "${YELLOW}Updating system packages...${NC}"
     sudo apt update -y && sudo apt upgrade -y
     echo -e "${GREEN}System update complete!${NC}"
 }
 
-# Function to check system health
+
 system_health_check() {
     echo -e "${YELLOW}Performing system health check...${NC}"
 
@@ -47,7 +47,7 @@ system_health_check() {
     echo -e "${GREEN}System health check complete!${NC}"
 }
 
-# Execute functions
+
 install_software
 update_system
 system_health_check
